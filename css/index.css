@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* NAVBAR STYLING */
+
+#navbar{
+    background-color: rgb(167 116 167);
+    color: whitesmoke;
+    padding-left: 10%;
+    display: flex;
+}
+h1{
+    font-size: 7vmin;
+}
+h3{
+    font-size: 5nmin;
+}
+
+@media only screen and (max-width:600px){
+    #navbar{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Game Container Box */
+
+
+#game-container{
+    display: flex;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:1000px){
+    #game-container{
+        width: 70%;
+        margin: 50px auto;
+    }
+    #gameInfo{
+        width: 100%;
+    }
+}
+#box1,#box2{
+    /* border: 2px solid red; */
+    margin: 5px;
+}
+#box1{
+    display: grid;
+    grid-template-rows:  repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+.chembers{
+    border: 2px solid rgb(119, 29, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5vmin;
+}
+.chembers:hover{
+    background-color: rgb(153, 41, 153);
+    color: white;
+    cursor: pointer;
+}
+
+#gameInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin: auto 100px;
+}
+#gameInfoHeading{
+    margin: 10px 0px;
+    color: rgb(119, 29, 119);
+}
+#winAnnouncement{
+    color: #df320d;
+}
+#resetGameBtn{
+    background-color: rgb(153, 41, 153);
+    color: white;
+    padding: 3vmin;
+    border-radius: 6px;
+    margin: 4px;
+    font-size: 15px;
+    display: none;
+}
+#resetGameBtn:hover{
+    background-color: rgb(119, 29, 119);
+    cursor: pointer;
+}
+
+/* //Border Utitlity Classes  */
+.border-black{
+    border: 2px solid black;
+}
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
