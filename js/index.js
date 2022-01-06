@@ -6,6 +6,7 @@ let turnBtnX = document.getElementById("turnBtnX");
 let turnBtn0 = document.getElementById("turnBtn0");
 let winAnnouncement = document.getElementById("winAnnouncement");
 let gameInfoHeading = document.getElementById("gameInfoHeading");
+let winImg = document.querySelector("#winImg img");
 
 function changeTurn() {
     turn = (turn === "X") ? "0" : "X";
@@ -45,6 +46,7 @@ Array.from(chembers).forEach((chember) => {
                 resetGameBtn.style.display = "block";
                 turnContainer.style.display = "none";
                 gameInfoHeading.style.display = "none";
+                winImg.style.width = "200px";
 
                 // resetGame();
             }
@@ -54,6 +56,7 @@ Array.from(chembers).forEach((chember) => {
             resetGameBtn.style.display = "block";
             turnContainer.style.display = "none";
             gameInfoHeading.style.display = "none";
+            winImg.style.width = "200px";
             turnCount = 0;
         }
     });
@@ -94,4 +97,5 @@ function resetGame() {
     turnBtnX.style.border = "4px solid red";
     turnBtn0.style.border = "2px solid black";
     gameInfoHeading.style.display = "block";
+    winImg.style.width = "0px";
 }

@@ -87,12 +87,15 @@ h3{
     color: #df320d;
 }
 #resetGameBtn{
-    
     display: none;
 }
 #resetGameBtn:hover{
     background-color: rgb(119, 29, 119);
     cursor: pointer;
+}
+#winImg img{
+    width: 0px;
+    transition: width 1s ease-in-out;
 }
 @media only screen and (max-width:1000px){
     #game-container{
@@ -101,6 +104,8 @@ h3{
     }
     #gameInfo{
         width: 100%;
+        margin: 0px;
+        text-align: center;
     }
     #box1{
         grid-template-rows:  repeat(3,18vw);
